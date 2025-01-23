@@ -82,13 +82,13 @@ const LoanForm = () => {
                   <Col md={6}>
                     <Form.Group>
                       <Form.Label>Loan Amount ($)</Form.Label>
-                      <Form.Control type="number" name="loanAmount" value={formData.loanAmount} onChange={handleChange} placeholder="E.g., 20000" min="0" max="100000" required />
+                      <Form.Control type="number" name="loanAmount" value={formData.loanAmount} onChange={handleChange} placeholder="E.g., 20000" min="5000" max="15000" required />
                     </Form.Group>
                   </Col>
                   <Col md={6}>
                     <Form.Group>
                       <Form.Label>Credit Score</Form.Label>
-                      <Form.Control type="number" name="creditScore" value={formData.creditScore} onChange={handleChange} placeholder="E.g., 750" min="-100" max="1200" required />
+                      <Form.Control type="number" name="creditScore" value={formData.creditScore} onChange={handleChange} placeholder="E.g., 750" min="300" max="850" required />
                     </Form.Group>
                   </Col>
                 </Row>
